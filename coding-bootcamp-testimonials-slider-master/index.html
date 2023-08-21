@@ -2,56 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
-  <link rel="stylesheet" href="challenge2">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./index.css">
 </head>
-<body>
-  
-  <div class="main">
-    
-   <div class="svg-elements">
-    <img class="svg1" src="C:\Users\RAMCOM\OneDrive\Bureau\30Days_Backend\challenge2\coding-bootcamp-testimonials-slider-master\images\pattern-quotes.svg" alt="SVG2 Image">
-    <img class="svg2" src="C:\Users\RAMCOM\OneDrive\Bureau\30Days_Backend\challenge2\coding-bootcamp-testimonials-slider-master\images\pattern-curve.svg" alt="SVG1 Image">
-    <img class="svg3" src="C:\Users\RAMCOM\OneDrive\Bureau\30Days_Backend\challenge2\coding-bootcamp-testimonials-slider-master\images\pattern-bg.svg">
-    
-   </div>
-      <div class="testimonials-patterns">
-      <div class="First-Testimonial">
-        <!-- Add more testimonials here -->
-      <img src="C:\Users\RAMCOM\OneDrive\Bureau\30Days_Backend\challenge2\coding-bootcamp-testimonials-slider-master\images\image-tanya.jpg" alt="image-tanya">
-      <p class="Testimonial-text"> “ I’ve been interested in coding for a while but never taken the jump, until now. 
-        I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-        excited about the future. ”</p>
-      <p class="Testimonial-author">Tanya Sinclair
-        UX Engineer</p>
-        </div>
-        <div class="second-Testimonials">
 
-          <img src="C:\Users\RAMCOM\OneDrive\Bureau\30Days_Backend\challenge2\coding-bootcamp-testimonials-slider-master\images\image-john.jpg" alt="image-john">
-          <p class="Testimonial-text">“ If you want to lay the best foundation possible I’d recommend taking this course. 
-            The depth the instructors go into is incredible. I now feel so confident about 
-            starting up as a professional developer. ”
-          </p>
-          <p class="Testimonial-author">  John Tarkpor
-            Junior Front-end Developer</p>
-            </div>
+<body>
+<div class="testimonials-patterns">
+  <div class="Tanya">
+    <div class="testimonial">
+      <p>
+        “I’ve been interested in coding for a while but never taken the jump, until now. 
+        I couldn’t recommend this course enough.  I’m now in the job of my dreams and so 
+        excited about the future. ”
+      </p>
+      <div class="infos">
+        <span class="name">Tanya Sinclair</span>
+        <span class="title">UX Engineer</span>
       </div>
     </div>
-  <div class="nav-bar">
-  
+    <div class="testimonial-img">
+      <img src="./images/image-tanya.jpg" alt="image-tanya" >
+      <div class="nav-buttons">
+        <button class="previous-button"></button>
+        <button class="next-button"></button>
+      </div>
+    </div>
   </div>
+  <div class="John">
+    <div class="testimonial">
+      <p>
+        “ If you want to lay the best foundation possible I’d recommend taking this course. 
+        The depth the instructors go into is incredible. I now feel so confident about 
+        starting up as a professional developer. ”
+      </p>
+      <div class="infos">
+        <span class="name">John Tarkpor</span>
+        <span class="title">Junior Front-end Developer</span>        
+      </div>
+    </div>
+    <div class="testimonial-img">
+      <img src="./images/image-john.jpg" alt="image-john">
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">30Days_Backend</a>. 
-    Coded by <a href="#">Aida_Maroua</a>.
+      <div class="nav-buttons">
+        <button class="previous"></button>
+        <button class="next"></button>
+      </div>
+    </div>
   </div>
+</div>
+<div class="attribution">
+  Challenge by <a href="#" target="_blank">30Day_Backend</a>. 
+  Coded by <a href="#">Aida_Marwa </a>.
+</div>
+<script src="index.js"></script>  
 </body>
 </html>

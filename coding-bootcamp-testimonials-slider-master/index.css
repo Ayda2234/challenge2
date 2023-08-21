@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Inter:wght@300;500;700&family=Karla:wght@200&family=Montserrat:ital,wght@0,400;0,900;1,400;1,600;1,900&display=swap');
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: url(./images/pattern-bg.svg), url(./images/pattern-quotes.svg), url(./images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: 92% 8%, 19% 18%,0% 50% /*bottom left*/;
+  
+}
+
+.hide{
+  display: none;
+}
+
+.testimonials-patterns{
+  margin-top: 60px;
+  max-width: 80vw;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.Tanya, .John{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+
+.testimonials-patterns p{
+  position: relative;
+  font-size: 32px;
+  font-weight: 300;
+  color:hsl(240, 38%, 20%);
+  line-height: 3rem;
+  line-break: auto;
+  margin-bottom: 2rem;
+  /*left: 50px;*/
+  
+  
+}
+
+.testimonials-patterns .name{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: hsl(240, 38%, 20%);
+}
+
+.testimonials-patterns .title{
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: hsl(240, 18%, 77%);
+}
+
+.testimonial-img{
+  position: relative;
+  
+}
+
+.testimonial-img img{
+  width: 550px;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.testimonial-img .nav-buttons{
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  right: 350px;
+  bottom: -15px;
+  display: flex;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav-buttons .previous{
+  background: url('./images/icon-prev.svg') no-repeat;
+  background-size: 30%;
+  background-position: center;
+  width: 50%;
+  border: none;
+  outline: none;
+  border-radius: 30px 0 0 30px;
+  z-index: 4;
+}
+
+.nav-buttons .next{
+  background: url('./images/icon-next.svg') no-repeat;
+  background-size: 30%;
+  background-position: center;
+  width: 50%;
+  border: none;
+  outline: none;
+  border-radius: 30px 0 0 30px;
+  z-index: 4;
+}
