@@ -114,3 +114,62 @@ body{
   z-index: 4;
 }
 
+/* Attribution Style */
+.attribution {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* responsive design starts here*/
+
+@media screen and (max-width: 768px) {
+  body{
+    background: url(./images/pattern-bg.svg), url(./images/pattern-quotes.svg),url(./images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-size: 80%, 20%, 80%;
+    background-position: 62% 18%, 45% 58%, bottom left;
+  }
+  .tanya, .john{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .testimonial-img img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+  }
+  .testimonials-patterns p{
+    margin-top: 4.5rem;
+    font-size: 1.2rem;
+  }
+  .testimonials-patterns .name{
+    font-size: 1rem;
+  }
+  
+  .testimonials-patterns .title{
+    font-size: 1.1rem;
+  }
+
+  .testimonial-img .nav-buttons{
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    top:230px;
+    right:90px;
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
