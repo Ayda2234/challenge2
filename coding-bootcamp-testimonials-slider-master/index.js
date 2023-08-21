@@ -1,25 +1,21 @@
-const John = document.querySelector(".John");
-const Tanya = document.querySelector(".Tanya");
-const previous = document.querySelectorAll(".previous");
+const john = document.querySelector(".john");
+const tanya = document.querySelector(".tanya");
+const prev = document.querySelectorAll(".previous");
 const next = document.querySelectorAll(".next");
 
-John.classList.add("hide");
+john.classList.add("hide");
 
+const slideChange = function() {
+  if(john.classList.contains("hide")){
+    john.classList.remove("hide");
+    tanya.classList.add("hide");
+  }else if(tanya.classList.contains("hide")){
+    tanya.classList.remove("hide");
+    john.classList.add("hide");
+  } else{
+    john.classList.add("hide");
+  }
+}
 
-const slideChange = () => { 
-    if(John.classList.contains("hide")){
-        John.classList.remove("hide");
-        Tanya.classList.add("hide");
-    }else if(Tanya.classList.contains("hide")){
-        Tanya.classList.remove("hide");
-        John.classList.add("hide");
-    } else {
-        John.classList.add("hide");
-    }
-}   
-
-
-
-
-previous.forEach(item => item.addEventListener("click" , slideChange));
-next.forEach(item => item.addEventListener("click" , slideChange));
+prev.forEach((item) => item.addEventListener("click", slideChange));
+next.forEach((item) => item.addEventListener("click", slideChange));
